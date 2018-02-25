@@ -1,0 +1,371 @@
+@charset "UTF-8";
+body,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+input,
+select,
+textarea,
+button,
+th,
+td,
+menu {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+ul,
+dl,
+ol {
+  list-style: none; }
+
+img,
+fieldset,
+input[type="submit"] {
+  border: 0 none; }
+
+em {
+  font-style: normal; }
+
+strong {
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button,
+input[type="button"] {
+  cursor: pointer;
+  border: 0 none; }
+
+a,
+button,
+input,
+img {
+  -webkit-touch-callout: none; }
+
+img {
+  /*pointer-events:none;*/
+  /*禁止图片的点击事件，例如长按保存图片*/ }
+
+input,
+select,
+textarea {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+html,
+body {
+  /*禁止用户选择元素*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  /*禁止元素点击出现半透明黑色背景*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Microsoft YaHei', 'Heiti SC';
+  outline: 0;
+  -webkit-text-size-adjust: none; }
+
+body {
+  height: 100%;
+  margin: 0;
+  position: relative; }
+
+.clear_fix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.melon_photo_width {
+  overflow: hidden; }
+
+.melon_photo_width img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .5s ease-in-out; }
+
+.melon_photo_height {
+  overflow: hidden; }
+
+.melon_photo_height img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all .5s ease-in-out; }
+
+.web {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .web tou {
+    width: 100%;
+    position: absolute;
+    top: 0.48rem;
+    left: 0;
+    padding: 0.17rem 0 0.1rem; }
+    .web tou .tou_left {
+      margin-left: 0.23rem;
+      width: 1.23rem;
+      height: 0.57rem; }
+      .web tou .tou_left button {
+        width: 1.23rem;
+        height: 0.57rem;
+        position: absolute;
+        left: 0.22rem;
+        top: 0.2rem;
+        font-size: 0.26rem;
+        border: 0.03rem solid #ff9344;
+        border-radius: 0.2rem;
+        background-color: transparent; }
+    .web tou .tou_right {
+      width: 1.63rem;
+      height: 0.69rem;
+      margin-right: 0.21rem;
+      border: 0.03rem solid #ff9344;
+      position: relative; }
+      .web tou .tou_right select {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        left: 0rem;
+        top: 0rem;
+        font-size: 0.26rem;
+        padding-left: 0.14rem;
+        -webkit-appearance: none; }
+      .web tou .tou_right::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 0.16rem solid #ff9344;
+        border-left: 0.15rem solid transparent;
+        border-right: 0.15rem solid transparent;
+        position: absolute;
+        right: 0.14rem;
+        top: 0.25rem; }
+    .web tou .tou_center {
+      text-align: center;
+      padding-left: 0.05rem;
+      margin: 0 auto;
+      width: 2.8rem;
+      height: 0.53rem; }
+      .web tou .tou_center p {
+        line-height: 0.53rem;
+        font-size: 0.26rem; }
+  .web neirong {
+    position: absolute;
+    top: 1.75rem;
+    width: 100%;
+    bottom: 1.72rem;
+    padding-left: 0.25rem;
+    overflow-y: auto; }
+    .web neirong .fenlei {
+      width: 100%;
+      height: 1.84rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.1rem; }
+      .web neirong .fenlei img {
+        width: 1.52rem;
+        height: 1.46rem; }
+      .web neirong .fenlei p {
+        font-size: 0.26rem;
+        text-align: center; }
+      .web neirong .fenlei .fenlei_a {
+        width: 1.5rem;
+        height: 1.86rem;
+        margin-right: 0.3rem; }
+      .web neirong .fenlei .fenlei_b {
+        width: 1.5rem;
+        height: 1.86rem;
+        margin-right: 0.3rem; }
+      .web neirong .fenlei .fenlei_c {
+        width: 1.5rem;
+        height: 1.86rem;
+        margin-right: 0.3rem; }
+      .web neirong .fenlei .fenlei_d {
+        width: 1.5rem;
+        height: 1.86rem; }
+    .web neirong .radio {
+      width: 2rem;
+      height: 0.44rem;
+      margin-left: 2.7rem;
+      position: relative; }
+      .web neirong .radio .shengcheng {
+        font-size: 0.16rem;
+        color: #ff9344; }
+      .web neirong .radio .qiancheng {
+        font-size: 0.16rem;
+        color: #ffc9a1; }
+    .web neirong .meishi {
+      width: 100%;
+      height: 0.5rem;
+      margin-top: 0.34rem;
+      margin-bottom: 1rem; }
+      .web neirong .meishi .meishi_left {
+        width: 2.3rem;
+        height: 0.51rem; }
+        .web neirong .meishi .meishi_left .icon-meishi {
+          font-size: 0.26rem; }
+        .web neirong .meishi .meishi_left span {
+          font-size: 0.3rem;
+          line-height: 0.51rem;
+          font-weight: bold; }
+      .web neirong .meishi .meishi_right a {
+        color: #ff9344;
+        font-weight: bold;
+        line-height: 0.5rem;
+        font-size: 0.24rem; }
+      .web neirong .meishi .meishi_right .my_icon {
+        font-size: 0.26rem;
+        color: #ff9344;
+        padding: 0 0.2rem 0 0.08rem;
+        margin-right: 0.3rem; }
+    .web neirong .meishi_content {
+      width: 100%;
+      height: 1.34rem; }
+      .web neirong .meishi_content img {
+        width: 1.25rem;
+        height: 1.34rem; }
+      .web neirong .meishi_content .content_a {
+        width: 1.25rem;
+        height: 1.34rem;
+        margin-right: 0.57rem; }
+      .web neirong .meishi_content .content_b {
+        width: 1.25rem;
+        height: 1.34rem;
+        margin-right: 0.57rem; }
+      .web neirong .meishi_content .content_c {
+        width: 1.25rem;
+        height: 1.34rem;
+        margin-right: 0.57rem; }
+      .web neirong .meishi_content .content_d {
+        width: 1.25rem;
+        height: 1.34rem; }
+    .web neirong .yundong {
+      width: 100%;
+      height: 0.5rem;
+      margin-top: 0.34rem;
+      margin-bottom: 1rem; }
+      .web neirong .yundong .yundong_left {
+        width: 2.3rem;
+        height: 0.51rem; }
+        .web neirong .yundong .yundong_left .icon-yundongyuan {
+          font-size: 0.26rem; }
+        .web neirong .yundong .yundong_left span {
+          font-size: 0.3rem;
+          line-height: 0.51rem;
+          font-weight: bold; }
+      .web neirong .yundong .yundong_right a {
+        color: #ff9344;
+        font-weight: bold;
+        line-height: 0.5rem;
+        font-size: 0.24rem; }
+      .web neirong .yundong .yundong_right .my_icon {
+        font-size: 0.26rem;
+        color: #ff9344;
+        padding: 0 0.2rem 0 0.08rem;
+        margin-right: 0.3rem; }
+    .web neirong .yundong_content {
+      width: 100%;
+      height: 1.34rem; }
+      .web neirong .yundong_content img {
+        width: 1.25rem;
+        height: 1.34rem; }
+      .web neirong .yundong_content .content_a {
+        width: 1.25rem;
+        height: 1.34rem;
+        margin-right: 0.57rem; }
+      .web neirong .yundong_content .content_b {
+        width: 1.25rem;
+        height: 1.34rem;
+        margin-right: 0.57rem; }
+      .web neirong .yundong_content .content_c {
+        width: 1.25rem;
+        height: 1.34rem;
+        margin-right: 0.57rem; }
+      .web neirong .yundong_content .content_d {
+        width: 1.25rem;
+        height: 1.34rem; }
+    .web neirong .dianying {
+      width: 100%;
+      height: 0.5rem;
+      margin-top: 0.34rem;
+      margin-bottom: 1rem; }
+      .web neirong .dianying .dianying_left {
+        width: 2.3rem;
+        height: 0.51rem; }
+        .web neirong .dianying .dianying_left .icon-dianying {
+          font-size: 0.26rem; }
+        .web neirong .dianying .dianying_left span {
+          font-size: 0.3rem;
+          line-height: 0.51rem;
+          font-weight: bold; }
+      .web neirong .dianying .dianying_right a {
+        color: #ff9344;
+        font-weight: bold;
+        line-height: 0.5rem;
+        font-size: 0.24rem; }
+      .web neirong .dianying .dianying_right .my_icon {
+        font-size: 0.26rem;
+        color: #ff9344;
+        padding: 0 0.2rem 0 0.08rem;
+        margin-right: 0.3rem; }
+    .web neirong .dianying_content {
+      width: 100%;
+      height: 1.34rem; }
+      .web neirong .dianying_content img {
+        width: 1.25rem;
+        height: 1.34rem; }
+      .web neirong .dianying_content .content_a {
+        width: 1.25rem;
+        height: 1.34rem;
+        margin-right: 0.57rem; }
+      .web neirong .dianying_content .content_b {
+        width: 1.25rem;
+        height: 1.34rem;
+        margin-right: 0.57rem; }
+      .web neirong .dianying_content .content_c {
+        width: 1.25rem;
+        height: 1.34rem;
+        margin-right: 0.57rem; }
+      .web neirong .dianying_content .content_d {
+        width: 1.25rem;
+        height: 1.34rem; }
+
+/*# sourceMappingURL=fenlei.css.map */

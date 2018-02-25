@@ -1,0 +1,434 @@
+@charset "UTF-8";
+body,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+input,
+select,
+textarea,
+button,
+th,
+td,
+menu {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+ul,
+dl,
+ol {
+  list-style: none; }
+
+img,
+fieldset,
+input[type="submit"] {
+  border: 0 none; }
+
+em {
+  font-style: normal; }
+
+strong {
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button,
+input[type="button"] {
+  cursor: pointer;
+  border: 0 none; }
+
+a,
+button,
+input,
+img {
+  -webkit-touch-callout: none; }
+
+img {
+  /*pointer-events:none;*/
+  /*禁止图片的点击事件，例如长按保存图片*/ }
+
+input,
+select,
+textarea {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+html,
+body {
+  /*禁止用户选择元素*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  /*禁止元素点击出现半透明黑色背景*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Microsoft YaHei', 'Heiti SC';
+  outline: 0;
+  -webkit-text-size-adjust: none; }
+
+body {
+  height: 100%;
+  margin: 0;
+  position: relative; }
+
+.clear_fix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.melon_photo_width {
+  overflow: hidden; }
+
+.melon_photo_width img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .5s ease-in-out; }
+
+.melon_photo_height {
+  overflow: hidden; }
+
+.melon_photo_height img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all .5s ease-in-out; }
+
+.web {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .web wo {
+    width: 100%;
+    position: absolute;
+    top: 0.48rem;
+    left: 0;
+    padding: 0.17rem 0 0.1rem; }
+    .web wo .wo_left {
+      line-height: 0.57rem;
+      margin-left: 0.23rem;
+      width: 1.23rem;
+      height: 0.57rem;
+      position: relative; }
+      .web wo .wo_left button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.23rem;
+        height: 0.57rem;
+        border: 0.03rem solid #ff9344;
+        border-radius: 0.2rem;
+        background-color: transparent;
+        font-size: 0.26rem; }
+    .web wo .wo_right {
+      margin-right: 0.19rem;
+      line-height: 0.57rem;
+      position: relative; }
+      .web wo .wo_right .icon-xinfeng {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        font-size: 0.65rem;
+        color: #ff9344;
+        position: relative; }
+      .web wo .wo_right .icon-xinfeng::after {
+        content: "2";
+        font-size: 0.12rem;
+        line-height: 0.27rem;
+        text-align: center;
+        width: 0.27rem;
+        height: 0.27rem;
+        border-radius: 0.1rem;
+        color: white;
+        background-color: #fa5050;
+        position: absolute;
+        right: 0;
+        top: 0; }
+    .web wo .wo_center {
+      text-align: center;
+      padding-left: 0.05rem;
+      margin: 0 auto;
+      width: 2.8rem;
+      height: 0.53rem; }
+      .web wo .wo_center p {
+        font-size: 0.26rem; }
+  .web section {
+    width: 100%;
+    position: absolute;
+    top: 1.23rem;
+    padding-left: 0.22rem;
+    padding-right: 0.22rem;
+    bottom: 1.6rem;
+    overflow-y: auto; }
+    .web section .touxiang {
+      width: 100%;
+      height: 1.7rem;
+      margin-top: 0.21rem; }
+      .web section .touxiang .touxiang_f img {
+        width: 1.72rem;
+        height: 1.68rem; }
+      .web section .touxiang .touxiang_c {
+        margin-left: 0.24rem; }
+        .web section .touxiang .touxiang_c p {
+          font-size: 0.3rem; }
+        .web section .touxiang .touxiang_c span {
+          font-size: 0.26rem;
+          color: #a3a3a3; }
+      .web section .touxiang .touxiang_r {
+        font-size: 0.6rem;
+        line-height: 1.7rem; }
+    .web section .dianping {
+      width: 100%;
+      height: 1.5rem;
+      margin: 0 auto;
+      margin-top: 0.26rem; }
+      .web section .dianping .dianping_l {
+        width: 30%;
+        height: 1.8rem;
+        background-color: #b2e0a0;
+        margin-right: 0.5rem;
+        text-align: center; }
+        .web section .dianping .dianping_l .icon-dianping {
+          color: white;
+          font-size: 0.8rem;
+          line-height: 1rem; }
+        .web section .dianping .dianping_l p {
+          font-size: 0.26rem;
+          font-weight: bold; }
+      .web section .dianping .dianping_r {
+        width: 30%;
+        height: 1.8rem;
+        background-color: #e0b7a0;
+        text-align: center; }
+        .web section .dianping .dianping_r .icon-youhuiquan {
+          color: white;
+          font-size: 0.6rem;
+          line-height: 1rem; }
+        .web section .dianping .dianping_r p {
+          font-size: 0.26rem;
+          font-weight: bold; }
+      .web section .dianping .dianping_c {
+        margin: 0 auto;
+        width: 30%;
+        height: 1.8rem;
+        background-color: #a0dce0;
+        text-align: center; }
+        .web section .dianping .dianping_c .icon-star {
+          color: white;
+          font-size: 0.8rem;
+          line-height: 1rem; }
+        .web section .dianping .dianping_c p {
+          font-size: 0.26rem;
+          font-weight: bold; }
+    .web section .qianbao {
+      width: 100%;
+      height: 0.7rem;
+      margin-top: 0.3rem;
+      position: relative; }
+      .web section .qianbao .icon-qianbao {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 0.5rem;
+        color: #ff9344;
+        margin-right: 0.38rem; }
+      .web section .qianbao .qian {
+        position: absolute;
+        top: 4px;
+        left: 0.8rem;
+        font-size: 0.26rem; }
+      .web section .qianbao .my_icon {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        font-size: 0.26rem;
+        color: #ff9344; }
+      .web section .qianbao span {
+        position: absolute;
+        top: 0.2rem;
+        right: 0.26rem;
+        font-size: 0.26rem; }
+    .web section .daidianping {
+      width: 100%;
+      height: 0.7rem;
+      margin-top: 0.3rem;
+      position: relative; }
+      .web section .daidianping .icon-dianping {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 0.5rem;
+        color: #ff9344;
+        margin-right: 0.38rem; }
+      .web section .daidianping .qian {
+        position: absolute;
+        top: 4px;
+        left: 0.8rem;
+        font-size: 0.26rem; }
+      .web section .daidianping .my_icon {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        font-size: 0.26rem;
+        color: #ff9344; }
+      .web section .daidianping span {
+        position: absolute;
+        top: 0.2rem;
+        right: 0.26rem;
+        font-size: 0.26rem; }
+    .web section .zhaohaoyou {
+      width: 100%;
+      height: 0.7rem;
+      margin-top: 0.3rem;
+      position: relative; }
+      .web section .zhaohaoyou .icon-diqiu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 0.5rem;
+        color: #ff9344;
+        margin-right: 0.38rem; }
+      .web section .zhaohaoyou .qian {
+        position: absolute;
+        top: 4px;
+        left: 0.8rem;
+        font-size: 0.26rem; }
+      .web section .zhaohaoyou .my_icon {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        font-size: 0.26rem;
+        color: #ff9344; }
+      .web section .zhaohaoyou span {
+        position: absolute;
+        top: 0.2rem;
+        right: 0.26rem;
+        font-size: 0.26rem; }
+    .web section .zuji {
+      width: 100%;
+      height: 0.7rem;
+      margin-top: 0.3rem;
+      position: relative; }
+      .web section .zuji .icon-zuji {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 0.5rem;
+        color: #ff9344;
+        margin-right: 0.38rem; }
+      .web section .zuji .qian {
+        position: absolute;
+        top: 4px;
+        left: 0.8rem;
+        font-size: 0.26rem; }
+      .web section .zuji .my_icon {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        font-size: 0.26rem;
+        color: #ff9344; }
+      .web section .zuji span {
+        position: absolute;
+        top: 0.2rem;
+        right: 0.26rem;
+        font-size: 0.26rem; }
+    .web section .shezhi {
+      width: 100%;
+      height: 0.7rem;
+      margin-top: 0.3rem;
+      position: relative; }
+      .web section .shezhi .icon-gongju {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 0.5rem;
+        color: #ff9344;
+        margin-right: 0.38rem; }
+      .web section .shezhi .qian {
+        position: absolute;
+        top: 4px;
+        left: 0.8rem;
+        font-size: 0.26rem; }
+      .web section .shezhi .my_icon {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        font-size: 0.26rem;
+        color: #ff9344; }
+      .web section .shezhi span {
+        position: absolute;
+        top: 0.2rem;
+        right: 0.26rem;
+        font-size: 0.26rem; }
+    .web section .lianxi {
+      width: 100%;
+      height: 0.7rem;
+      margin-top: 0.3rem;
+      position: relative; }
+      .web section .lianxi .icon-dianhua {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 0.5rem;
+        color: #ff9344;
+        margin-right: 0.38rem; }
+      .web section .lianxi .qian {
+        position: absolute;
+        top: 4px;
+        left: 0.8rem;
+        font-size: 0.26rem; }
+      .web section .lianxi .my_icon {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        font-size: 0.26rem;
+        color: #ff9344; }
+      .web section .lianxi span {
+        position: absolute;
+        top: 0.2rem;
+        right: 0.26rem;
+        font-size: 0.26rem; }
+    .web section .button button {
+      margin-left: 1.09rem;
+      width: 1.46rem;
+      height: 0.75rem;
+      border-radius: 0.35rem;
+      background-color: #ff9344;
+      font-size: 0.24rem;
+      color: white; }
+
+/*# sourceMappingURL=wode.css.map */

@@ -1,0 +1,371 @@
+@charset "utf-8";
+@import "common/reset";
+$color:#ff9344;
+@function r($px) {
+    @return $px/100*1rem;
+}
+
+.web {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    wo {
+        width: 100%;
+        position: absolute;
+        top: r(48);
+        left: 0;
+        padding: r(17) 0 r(10);
+        .wo_left {
+            line-height: r(57);
+            margin-left: r(23);
+            width: r(123);
+            height: r(57);
+            position: relative;
+            button {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: r(123);
+                height: r(57);
+                border: r(3) solid #ff9344;
+                border-radius: r(20);
+                background-color: transparent;
+                font-size: r(26);
+            }
+        }
+        .wo_right {
+            margin-right: r(19);
+            line-height: r(57);
+            position: relative;
+            .icon-xinfeng {
+                position: absolute;
+                top: -5px;
+                left: 0;
+                font-size: r(65);
+                color: $color;
+                position: relative;
+            }
+            .icon-xinfeng::after {
+                content: "2";
+                font-size: r(12);
+                line-height: r(27);
+                text-align: center;
+                width: r(27);
+                height: r(27);
+                border-radius: r(10);
+                color: white;
+                background-color: #fa5050;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+        .wo_center {
+            text-align: center;
+            padding-left: r(5);
+            margin: 0 auto;
+            width: r(280);
+            height: r(53);
+            p {
+                font-size: r(26);
+            }
+        }
+    }
+    section {
+        width: 100%;
+        position: absolute;
+        top: r(123);
+        padding-left: r(22);
+        padding-right: r(22);
+        bottom: r(160);
+        overflow-y: auto;
+        .touxiang {
+            width: 100%;
+            height: r(170);
+            margin-top: r(21);
+            .touxiang_f {
+                img {
+                    width: r(172);
+                    height: r(168);
+                }
+            }
+            .touxiang_c {
+                margin-left: r(24);
+                p {
+                    font-size: r(30);
+                }
+                span {
+                    font-size: r(26);
+                    color: #a3a3a3;
+                }
+            }
+            .touxiang_r {
+                font-size: r(60);
+                line-height: r(170);
+            }
+        }
+        .dianping {
+            width: 100%;
+            height: r(150);
+            margin: 0 auto;
+            margin-top: r(26);
+            .dianping_l {
+                width: 30%;
+                height: r(180);
+                background-color: #b2e0a0;
+                margin-right: r(50);
+                text-align: center;
+                .icon-dianping {
+                    color: white;
+                    font-size: r(80);
+                    line-height: r(100);
+                }
+                p {
+                    font-size: r(26);
+                    font-weight: bold;
+                }
+            }
+            .dianping_r {
+                width: 30%;
+                height: r(180);
+                background-color: #e0b7a0;
+                text-align: center;
+                .icon-youhuiquan {
+                    color: white;
+                    font-size: r(60);
+                    line-height: r(100);
+                }
+                p {
+                    font-size: r(26);
+                    font-weight: bold;
+                }
+            }
+            .dianping_c {
+                margin: 0 auto;
+                width: 30%;
+                height: r(180);
+                background-color: #a0dce0;
+                text-align: center;
+                .icon-star {
+                    color: white;
+                    font-size: r(80);
+                    line-height: r(100);
+                }
+                p {
+                    font-size: r(26);
+                    font-weight: bold;
+                }
+            }
+        }
+        .qianbao {
+            width: 100%;
+            height: r(70);
+            margin-top: r(30);
+            position: relative;
+            .icon-qianbao {
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: r(50);
+                color: $color;
+                margin-right: r(38);
+            }
+           .qian{
+                position: absolute;
+                top:4px;
+                left:r(80);
+                font-size: r(26);
+            }
+            .my_icon {
+                position: absolute;
+                top:10px;
+                right:0;
+                font-size: r(26);
+                color: $color;
+            }
+            span{
+               position: absolute;
+                top:r(20);
+                right:r(26); 
+                font-size: r(26);
+            }
+        }
+        .daidianping {
+            width: 100%;
+            height: r(70);
+            margin-top: r(30);
+            position: relative;
+            .icon-dianping{
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: r(50);
+                color: $color;
+                margin-right: r(38);
+            }
+           .qian{
+                position: absolute;
+                top:4px;
+                left:r(80);
+                font-size: r(26);
+            }
+            .my_icon {
+                position: absolute;
+                top:10px;
+                right:0;
+                font-size: r(26);
+                color: $color;
+            }
+            span{
+               position: absolute;
+                top:r(20);
+                right:r(26); 
+                font-size: r(26);
+            }
+        }
+        .zhaohaoyou {
+            width: 100%;
+            height: r(70);
+            margin-top: r(30);
+            position: relative;
+            .icon-diqiu{
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: r(50);
+                color: $color;
+                margin-right: r(38);
+            }
+           .qian{
+                position: absolute;
+                top:4px;
+                left:r(80);
+                font-size: r(26);
+            }
+            .my_icon {
+                position: absolute;
+                top:10px;
+                right:0;
+                font-size: r(26);
+                color: $color;
+            }
+            span{
+               position: absolute;
+                top:r(20);
+                right:r(26); 
+                font-size: r(26);
+            }
+        }
+        .zuji {
+            width: 100%;
+            height: r(70);
+            margin-top: r(30);
+            position: relative;
+            .icon-zuji{
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: r(50);
+                color: $color;
+                margin-right: r(38);
+            }
+           .qian{
+                position: absolute;
+                top:4px;
+                left:r(80);
+                font-size: r(26);
+            }
+            .my_icon {
+                position: absolute;
+                top:10px;
+                right:0;
+                font-size: r(26);
+                color: $color;
+            }
+            span{
+               position: absolute;
+                top:r(20);
+                right:r(26); 
+                font-size: r(26);
+            }
+        }
+        .shezhi {
+            width: 100%;
+            height: r(70);
+            margin-top: r(30);
+            position: relative;
+            .icon-gongju{
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: r(50);
+                color: $color;
+                margin-right: r(38);
+            }
+           .qian{
+                position: absolute;
+                top:4px;
+                left:r(80);
+                font-size: r(26);
+            }
+            .my_icon {
+                position: absolute;
+                top:10px;
+                right:0;
+                font-size: r(26);
+                color: $color;
+            }
+            span{
+               position: absolute;
+                top:r(20);
+                right:r(26); 
+                font-size: r(26);
+            }
+        }
+        .lianxi {
+            width: 100%;
+            height: r(70);
+            margin-top: r(30);
+            position: relative;
+            .icon-dianhua{
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: r(50);
+                color: $color;
+                margin-right: r(38);
+            }
+           .qian{
+                position: absolute;
+                top:4px;
+                left:r(80);
+                font-size: r(26);
+            }
+            .my_icon {
+                position: absolute;
+                top:10px;
+                right:0;
+                font-size: r(26);
+                color: $color;
+            }
+            span{
+               position: absolute;
+                top:r(20);
+                right:r(26); 
+                font-size: r(26);
+            }
+        }
+        .button{
+           
+         button{
+              margin-left: r(109);
+              width: r(146);
+              height: r(75);
+              border-radius:r(35);
+             background-color: $color;
+             font-size:r(24);
+             color:white;
+          }  
+        }
+    }
+}
